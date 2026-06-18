@@ -1,11 +1,11 @@
-# HV-LazyBackup (Bootloader System)
+# HV-LazyBackup (Bootstrap System)
 
 <p align="center">
   <img src="assets/hv-lazybackup-architecture-image.png" alt="HV-LazyBackup Architecture Demo" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PowerShell-Bootloader-blue?style=for-the-badge&logo=powershell" />
+  <img src="https://img.shields.io/badge/PowerShell-Bootstrap-blue?style=for-the-badge&logo=powershell" />
   <img src="https://img.shields.io/badge/Hyper--V-Automation-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/System-Unpacker-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Release--Safe-green?style=for-the-badge" />
@@ -15,9 +15,9 @@
 
 # Important Concept
 
-HV-LazyBackup is a bootloader / unpacker engine. You run one setup script, and it generates the complete Hyper-V backup runtime system.
+HV-LazyBackup is a bootstrap / unpacker engine. You run one setup script, and it generates the complete Hyper-V backup runtime system.
 
-The bootloader is for installation. The generated runtime scripts are for daily use.
+The bootstrap is for installation. The generated runtime scripts are for daily use.
 
 ---
 
@@ -27,7 +27,7 @@ The bootloader is for installation. The generated runtime scripts are for daily 
 .\HV_LazyBackup_Bootstrap_Setup.ps1
 ```
 
-The bootloader:
+The bootstrap:
 
 - Detects Hyper-V and lists available VMs.
 - Lets you choose the target VM.
@@ -132,7 +132,7 @@ Export a VM state report:
 
 The configured backup root comes from `config.json`.
 
-The bootloader and runtime menu only allow safe backup drives. `C:\` and the drive or drives where the selected VM stores its virtual disks are blocked.
+The bootstrap and runtime menu only allow safe backup drives. `C:\` and the drive or drives where the selected VM stores its virtual disks are blocked.
 
 To change the saved default backup drive, use option `7. Change Backup Drive` in the generated menu:
 
@@ -189,7 +189,7 @@ X:\VM_MASTER_BACKUP\GrizTechW-MASTER-2026-06-16_12-03\
 
 # Status
 
-Release-Safe Bootloader System v1.3
+Release-Safe Bootstrap System v1.3
 
 ---
 
